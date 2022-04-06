@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multidimentional Array</title>
+</head>
+<body>
+  
+  <script>
+    var arry = [
+      ['Harry', 18, 'Male', 'BCom'],
+      ['Sunny', 19, 'Female', 'BA'],
+      ['Tom', 20, 'Male', 'SSC'],
+      ['Emon', 22, 'Male', 'Hons']
+    ];
+    //document.write(arry[0].length);
+    for(var i=0; i<arry.length; i++){
+      for(var j=0; j<arry[i].length; j++){
+        document.write(arry[i][j] + " ");
+      }
+      document.write("<br/>");
+    }
+  </script>
+</body>
+</html>

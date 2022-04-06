@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array some and every function</title>
+</head>
+<body>
+  
+  <script>
+    var a = [10, 12, 14, 18, 19, 20];
+    document.write(a + "<br>");
+
+    // if you want to run some() function then you have to call a outer function which will return your some function value. This some function return only true and false means boolean values.
+    var b = a.some(checkAge);
+    document.write(b + '<br>');
+    function checkAge(age){
+      return age>=20;
+    }
+
+    // In the every() function, it also return boolean value means true or false. But there have some different. every() function will return true if only if all of the value of array pass the the test of function.
+    var c = a.every(checkAge);
+    document.write(c);
+  </script>
+</body>
+</html>
