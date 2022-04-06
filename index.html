@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Practice</title>
+</head>
+<body>
+  
+  <script>
+    function sum(math, english, science){
+      var sum = math+english+science;
+      return sum;
+    }
+    function percentage(total){
+      var p = (total/300)*100;
+      document.write(p);
+    }
+    var total = sum(44, 56, 64);
+    document.write(total + "<br>");
+    percentage(total);
+  </script>
+  <script src="javascript.js"></script>
+</body>
+</html>
