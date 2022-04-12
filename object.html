@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  
+  <script>
+    var a = {
+      fname : "Emon",
+      lname : "Hassan",
+      age : 22,
+      status : "EliteDev",
+      skill : ['html', 'css', 'javascript', 'jquery', 'etc'],
+      fullname : function(){
+        return this.fname + " " + this.lname
+      },
+      salary : function(){
+        return "you have no salary"
+      },
+      friends : {
+        'one' : 'shariar',
+        '2' : 'sagor',
+        '3' : 'murad'
+      }
+    }
+
+    console.log(a);
+    console.log(a.skill);
+    console.log(a.fullname());
+    console.log(a.salary());
+    console.log(a.friends.one);
+  </script>
+</body>
+</html>
